@@ -1,0 +1,11 @@
+CC=gcc
+CFLAGS=-Wall -Wextra -pedantic -std=c11
+LIBS=-lcrypt
+
+all: server_0936
+
+server_0936: server_0936.c
+	$(CC) $(CFLAGS) server_0936.c -o server_0936 $(LIBS)
+
+clean:
+	rm -f server_0936
